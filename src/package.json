@@ -1,7 +1,7 @@
 {
   "name": "reactjs",
   "version": "0.1.0",
-  "description": "all i know about reactjs",
+  "description": "All i know about reactjs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,11 +26,12 @@
     "eslint-plugin-react": "^7.7.0"
   },
   "dependencies": {
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "express": "^4.16.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "webpack": "^4.1.1",
-    "babel-preset-env": "^1.6.1",
-    "babel-loader": "^7.1.4"
+    "webpack": "^4.1.1"
   }
 }
