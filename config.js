@@ -1,5 +1,5 @@
 var env = process.env.NODE_ENV == 'production' ? 'production' : 'development'
-  , siteURL = env == 'development' ? 'https://127.0.0.1:8080' : 'https://newAkadimos.herokuapp.com'
+  , siteURL = env == 'development' ? 'https://127.0.0.1:8080' : 'https://react-web-zp.herokuapp.com'
   , config = {
     app: {
       env: env,
