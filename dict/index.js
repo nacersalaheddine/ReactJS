@@ -30,25 +30,25 @@ dicts['home'] = {
 
 dicts['auth'] = {
   'en': {
-    '00 page title': 'React web (En)'
+    '01 page title': 'React web (En)'
   },
   'ar': {
-    '00 page title': 'React Web (Ar)'
+    '01 page title': 'React Web (Ar)'
   },
   'fr': {
-    '00 page title': 'React Web (Fr)'
+    '01 page title': 'React Web (Fr)'
   }
 }
 
 dicts['profile'] = {
   'en': {
-    '00 page title': 'Profile'
+    '02 page title': 'Profile'
   },
   'ar': {
-    '00 page title': 'الملف الشخصي'
+    '02 page title': 'الملف الشخصي'
   },
   'fr': {
-    '00 page title': 'Profil'
+    '02 page title': 'Profil'
   }
 }
 
