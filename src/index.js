@@ -7,10 +7,14 @@ const homePage = () => import(/* webpackChunkName: "home" */ './scenes/home')
 const profilePage = () => import(/* webpackChunkName: "profile" */ './scenes/profile')
 const authPage = () => import(/* webpackChunkName: "auth" */ './scenes/auth')
 
+var auth = {
+  isAuthenticated: true,
+}
+
 ReactDOM.render(
   <Router>
     <div>
-      <Route exact path='/' component={() => <AsyncComponent moduleProvider={homePage==null ? homePage : authPage} />} />
+      <Route exact path='/' component={() => <AsyncComponent moduleProvider={auth.isAuthenticated ? homePage : authPage} />} />
       <Route exact path='/Profile' component={() => <AsyncComponent moduleProvider={profilePage} />} />
     </div>
   </Router>
