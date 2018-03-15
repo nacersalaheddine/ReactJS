@@ -25,6 +25,7 @@ server.use('/web', express.static('./public/web'))
 // home country academy, subAcademy, division or sector link
 server.use('/', serveReact)
 server.use('/Profile', serveReact)
+server.use('/Join', serveReact)
 
 // start the express server
 server.listen(config.app.port, function () {
