@@ -17,7 +17,7 @@ i use this on my PC:
 - Chrome (with React Developer Tools) as the main dev browser, Firefox and Edge.
 
 ## Programming Languages needed
-not mutch:
+not much:
 - JavaScript (ES5, ES6).
 - HTML5.
 - CSS3.
@@ -25,13 +25,13 @@ not mutch:
 - Markdown.
 
 
-## npm dependencies
-for dev i use:
+## NPM dependencies
+For dev i use:
 - ESLint, configured for React and babel.
-- i don't feel like using WebPack-Dev-Server, not yet at leat.
+- i don't feel like using Webpack-Dev-Server, not yet at least.
 
-for production ( the rest ) i use:
-- Express.
-- React and React-Dom.
-- Webpack.
-- Babel.
+For production ( and the rest ) i use:
+- Express: for serving the static files.
+- React and React-Dom: for react related stuff.
+- Webpack: for packing and spliting all the code, usefull for lazy-loading technic.
+- Babel: used to translate the code to ES5 code, so that it would be compatible all the way back to IE8.
