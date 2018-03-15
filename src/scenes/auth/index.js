@@ -23,7 +23,7 @@ const authPage = () => (
             <label className="custom-control-label" htmlFor="keep">Keep me signed in</label>
           </div>
         </div>
-        <button className="btn btn-success">Sign in</button>
+        <button className="btn btn-success w-100">Sign in</button>
       </div>
     </div>
     <div className="card">
