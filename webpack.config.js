@@ -1,5 +1,5 @@
 var StringReplacePlugin = require('string-replace-webpack-plugin')
-var dict = require('./src/dict/dict')
+var dict = require('./dict')
 var exp = []
 var webpack = require('webpack')
 
