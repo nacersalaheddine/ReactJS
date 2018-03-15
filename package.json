@@ -4,7 +4,7 @@
   "description": "All i know about reactjs",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/webpack -p && node src/index.js",
+    "start": "node_modules/.bin/webpack -p && node index.js",
     "wpdev": "node_modules/.bin/webpack -wd",
     "test": "test"
   },
