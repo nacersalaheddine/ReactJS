@@ -8,7 +8,7 @@ const profilePage = () => import(/* webpackChunkName: "profile" */ './scenes/pro
 const authPage = () => import(/* webpackChunkName: "auth" */ './scenes/auth')
 
 var auth = {
-  isAuthenticated: true,
+  isAuthenticated: false,
 }
 
 ReactDOM.render(
