@@ -18,13 +18,37 @@ var dicts = []
 
 dicts['home'] = {
   'en': {
-    '00 page title': 'Akadimos En'
+    '00 page title': 'React web (En)'
   },
   'ar': {
-    '00 page title': 'آكاديموس'
+    '00 page title': 'React Web (Ar)'
   },
   'fr': {
-    '00 page title': 'Akadimos Fr'
+    '00 page title': 'React Web (Fr)'
+  }
+}
+
+dicts['auth'] = {
+  'en': {
+    '00 page title': 'React web (En)'
+  },
+  'ar': {
+    '00 page title': 'React Web (Ar)'
+  },
+  'fr': {
+    '00 page title': 'React Web (Fr)'
+  }
+}
+
+dicts['profile'] = {
+  'en': {
+    '00 page title': 'Profile'
+  },
+  'ar': {
+    '00 page title': 'الملف الشخصي'
+  },
+  'fr': {
+    '00 page title': 'Profil'
   }
 }
 

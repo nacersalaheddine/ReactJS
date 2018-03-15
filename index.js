@@ -23,7 +23,8 @@ function serveReact(req, res, next) {
 server.use('/web', express.static('./public/web'))
 
 // home country academy, subAcademy, division or sector link
-server.use('/(:countryCode([a-z]{2})(/:acadCode([a-z0-9]{2,10})(/([a-z0-9]{2,10})){0,9}(/[@a-z0-9]{2,10}))?)?', serveReact)
+server.use('/', serveReact)
+server.use('/Profile', serveReact)
 
 // start the express server
 server.listen(config.app.port, function () {
