@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const authPage = () => (
   <div className="container" style={{ maxWidth: "24rem" }}>
     <div className="text-center">
-      <img src="/web/svg/react.svg" style={{ width: "6rem", margin: "1rem" }} />
+      <img src="/web/svg/react.svg" style={{ width: "6rem", height: "6rem", margin: "1rem" }} />
       <h5 className="card-title">{'Sign in to React web'}</h5>
     </div>
     <div className="card" style={{ margin: "1rem 0" }}>
