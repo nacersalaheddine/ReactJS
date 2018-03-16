@@ -10,7 +10,7 @@ const authPage = () => (
     <div className="card" style={{ margin: "1rem 0" }}>
       <div className="card-body">
         <div className="form-group">
-          <label htmlFor="username">Email address</label>
+          <label htmlFor="username">Username or email address</label>
           <input type="text" className="form-control" id="username" placeholder="Enter username or email" />
         </div>
         <div className="form-group">
