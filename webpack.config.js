@@ -18,7 +18,7 @@ for (const key in dict) {
         module: {
           rules: [
             {
-              test: /\.js$/,
+              test: /\.jsx?$/,
               loader: StringReplacePlugin.replace({
                 replacements: [
                   {
@@ -31,14 +31,17 @@ for (const key in dict) {
               })
             },
             {
-              test: /\.js$/,
+              test: /\.jsx?$/,
               loader: 'babel-loader'
             }
           ]
         },
         plugins: [
           new StringReplacePlugin()
-        ]
+        ],
+        resolve: {
+          extensions: ['.js', '.jsx']
+        }
       }
     )
   }
