@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Redirect, BrowserRouter as Router, Route } from 'react-router-dom'
 import AsyncComponent from './components/AsyncComponent'
 
 const homePage = () => import(/* webpackChunkName: "home" */ './scenes/home')
@@ -16,8 +16,10 @@ ReactDOM.render(
   <Router>
     <div>
       <Route exact path='/' component={() => <AsyncComponent moduleProvider={auth.isAuthenticated ? homePage : authPage} />} />
-      <Route exact path='/Profile' component={() => <AsyncComponent moduleProvider={profilePage} />} />
-      <Route exact path='/Join' component={() => <AsyncComponent moduleProvider={joinPage} />} />
+      <Route exact path='/Profile' component={auth.isAuthenticated ?
+        () => <AsyncComponent moduleProvider={profilePage} /> : () => <Redirect to='/' />} />
+      <Route exact path='/Join' component={!auth.isAuthenticated ?
+        () => <AsyncComponent moduleProvider={joinPage} /> : () => <Redirect to='/' />} />
     </div>
   </Router>
   ,
