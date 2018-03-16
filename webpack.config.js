@@ -7,7 +7,7 @@ for (const key in dict) {
     exp.push(
       {
         entry: {
-          index: './src/index.js'
+          index: ['babel-polyfill', './src/index.js']
         },
         output: {
           path: __dirname + '/public/web/js/' + key,
@@ -29,7 +29,7 @@ for (const key in dict) {
                   }
                 ]
               })
-                  },
+            },
             {
               test: /\.js$/,
               loader: 'babel-loader'
