@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const joinPage = () => (
   <div className="container" style={{ maxWidth: "30rem" }}>
-    <div class="text-center" style={{ margin: "1rem 0 0 0" }}>
+    <div className="text-center" style={{ margin: "1rem 0 0 0" }}>
       <img src="/web/svg/react.svg" style={{ width: "4rem", height: "4rem", margin: "0 1rem 0 0" }} />
       <a className="display-4 align-bottom">{'Join React web'}</a>
     </div>
@@ -12,17 +12,17 @@ const joinPage = () => (
         <div className="form-group">
           <label htmlFor="username">Username</label>
           <input type="text" className="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter username" />
-          <small id="usernameHelp" class="form-text text-muted">{'This will be your username.'}</small>
+          <small id="usernameHelp" className="form-text text-muted">{'This will be your username.'}</small>
         </div>
         <div className="form-group">
           <label htmlFor="email">Email address</label>
           <input type="text" className="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" />
-          <small id="emailHelp" class="form-text text-muted">{'We\'ll never share your email with anyone else.'}</small>
+          <small id="emailHelp" className="form-text text-muted">{'We\'ll never share your email with anyone else.'}</small>
         </div>
         <div className="form-group">
           <label htmlFor="password">Password</label>
           <input type="password" className="form-control" id="password" aria-describedby="passwordHelp" placeholder="Password" />
-          <small id="passwordHelp" class="form-text text-muted">{'Use at least one lowercase letter, one numeral, and seven characters.'}</small>
+          <small id="passwordHelp" className="form-text text-muted">{'Use at least one lowercase letter, one numeral, and seven characters.'}</small>
         </div>
         <div className="form-group">
           <label htmlFor="confirmPassword">Confirm your password</label>
