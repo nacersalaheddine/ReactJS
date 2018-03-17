@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node_modules/.bin/webpack -p && node index.js",
     "wpdev": "node_modules/.bin/webpack -wd",
+    "expdev": "node index.js",
     "test": "test"
   },
   "repository": {
