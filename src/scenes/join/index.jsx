@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import LogoMain from '../../components/logo-main'
 
 const joinPage = () => (
   <div className="container" style={{ maxWidth: "30rem" }}>
-    <div className="text-center" style={{ margin: "1rem 0 0 0" }}>
-      <img src="/web/svg/react.svg" style={{ width: "4rem", height: "4rem", margin: "0 1rem 0 0" }} />
-      <a className="display-4 align-bottom">{'Join React web'}</a>
+    <div className="text-center" style={{ marginTop: "1rem" }} >
+      <LogoMain />
+      <a className="display-4 align-bottom" style={{ marginLeft: "1rem" }}>{'Join React web'}</a>
     </div>
     <div className="" style={{ margin: "1rem 0" }}>
       <div className="card-body">
@@ -37,7 +38,7 @@ const joinPage = () => (
     </div>
     <div className="card" style={{ margin: "1rem 0" }}>
       <div className="card-body text-center">
-        <div className="align-middle">{'Already a member ?'} <Link to="/">Sign in instead</Link></div>
+        <div className="align-middle">{'Already a member ?'} <Link to="/Login">Sign in instead</Link></div>
       </div>
     </div>
   </div>
