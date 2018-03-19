@@ -6,6 +6,8 @@ const landingPage = () => (
     <div className="text-center">
       <img src="/web/svg/react.svg" style={{ width: "6rem", height: "6rem", margin: "1rem" }} />
       <h5 className="card-title">{'Welcome to React web'}</h5>
+      <Link to="/Login">Login</Link><br />
+      <Link to="/join">Join</Link>
     </div>
   </div>
 )

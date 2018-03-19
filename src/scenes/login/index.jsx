@@ -5,8 +5,8 @@ import LoginCard from '../../components/login-card'
 
 const loginPage = () => (
   <div className="container" style={{ maxWidth: "24rem" }}>
-    <div className="text-center" style={{ marginTop: "2rem" }}>
-      <LogoMain size="big" />
+    <div className="text-center" >
+      <div style={{ padding: "1rem 0" }}><LogoMain size="big" /></div>
       <h5 className="card-title">{'Sign in to React web'}</h5>
     </div>
     <LoginCard />
