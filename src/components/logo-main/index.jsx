@@ -4,12 +4,8 @@ import { Link } from 'react-router-dom'
 
 class LogoMain extends React.Component {
   render() {
-    let size = "4rem"
-    switch (this.props.size) {
-      case "big":
-        size = "6rem"
-        break;
-    }
+    let size = '4rem'
+    this.props.size == 'big' ? size = '6rem' : 1
     return (
       <Link to="/">
         <img src="/web/svg/react.svg" style={{ width: size, height: size }} />

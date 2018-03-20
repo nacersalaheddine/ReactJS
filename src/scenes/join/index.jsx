@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 import LogoMain from '../../components/logo-main'
 
 const joinPage = () => (
-  <div className="container" style={{ maxWidth: "30rem" }}>
-    <div className="text-center" style={{ marginTop: "1rem" }} >
+  <div className="container" style={{ maxWidth: '30rem' }}>
+    <div className="text-center" style={{ marginTop: '1rem' }} >
       <LogoMain />
-      <a className="display-4 align-bottom" style={{ marginLeft: "1rem" }}>{'Join React web'}</a>
+      <a className="display-4 align-bottom" style={{ marginLeft: '1rem' }}>{'Join React web'}</a>
     </div>
-    <div className="" style={{ margin: "1rem 0" }}>
+    <div className="" style={{ margin: '1rem 0' }}>
       <div className="card-body">
         <div className="form-group">
           <label htmlFor="username">Username</label>
@@ -29,14 +29,14 @@ const joinPage = () => (
           <label htmlFor="confirmPassword">Confirm your password</label>
           <input type="password" className="form-control" id="confirmPassword" placeholder="Confirm password" />
         </div>
-        <div className="form-group border-top border-bottom" style={{ padding: "1rem 0" }}>
+        <div className="form-group border-top border-bottom" style={{ padding: '1rem 0' }}>
           {'By clicking on "Create an account" below, you are agreeing to the '}
           <Link to="/Terms">{'Terms of Service'}</Link>{' and the '}<Link to="/Privacy">{'Privacy Policy'}</Link>.
         </div>
         <button className="btn btn-success">Create an account</button>
       </div>
     </div>
-    <div className="card" style={{ margin: "1rem 0" }}>
+    <div className="card" style={{ margin: '1rem 0' }}>
       <div className="card-body text-center">
         <div className="align-middle">{'Already a member ?'} <Link to="/Login">Sign in instead</Link></div>
       </div>

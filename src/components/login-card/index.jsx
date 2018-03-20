@@ -3,7 +3,7 @@ import React from 'react'
 class LoginCard extends React.Component {
   render() {
     return (
-      <div className="card" style={{ margin: "1rem 0" }}>
+      <div className="card" style={{ margin: '1rem 0' }}>
         <div className="card-body">
           <div className="form-group">
             <label htmlFor="username">Username or email address</label>
